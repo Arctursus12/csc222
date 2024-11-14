@@ -56,3 +56,17 @@ int num_vector_sum(const vector<int>& vec) {
     return product; /*Adding a last commit on this just to be confused
     Why is this function called a sum in the assignment? It yields a product*/
 }
+
+int nums_mean(const vector<int>& vec) {
+    int mean;
+    if (vec.empty()) {return 0;} //Should work as a failsafe in case the vector is empty
+    for (size_t i = 0; i < vec.size(); ++i) { //Recycling code, if it works it works part 5?
+        mean += vec[i];
+    }
+    mean /= vec.size(); //Doing this before return because I don't want it to somehow break
+    return mean;
+}
+
+int nums_median(const vector<int>& vec) {
+    return 0;
+}
