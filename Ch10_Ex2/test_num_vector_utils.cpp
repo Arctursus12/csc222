@@ -29,3 +29,7 @@ TEST_CASE("Testing only_evens") {
     string expected = "2 4 6 8 12 14 22";
     CHECK(render_num_vector(evens) == expected);
 }
+TEST_CASE("Testing num_vector_product") {
+    vector<int> nums = {2, 3, 7};
+    CHECK(42 == num_vector_sum(nums));
+}
