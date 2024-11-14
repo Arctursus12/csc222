@@ -1,6 +1,6 @@
 # csc222
 CSC 222 (2024-2025) Course repository.
-Links to the specific assignments, organized by week, will be added below.
+Links to the specific assignments, organized by week, will be added below. Every chapter/assignment will include a markdown file containing some relevant info.
 A copy of the specific doctest version I am/was using is also available within the repository.
 
 ## Week of Tuesday, November 12, 2024
