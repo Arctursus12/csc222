@@ -75,4 +75,4 @@ double nums_median(const vector<int>& vec) {
     size_t size = sortvec.size(); //Those three lines took like an hour to research for
     if (size % 2 == 0) {return(sortvec[size/2]+sortvec[size/2-1])/2.0;} //2 hours here
     else {return sortvec[size/2];} //I am very slow sometimes, and this was one such time
-} //And the issue wasn't even here!
+} //And the issue wasn't even here! Not to mention, I made things overly complex by sorting.
