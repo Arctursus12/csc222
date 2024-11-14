@@ -16,3 +16,13 @@ string render_num_vector(const vector<int>& vec) {
     }
     return s;
 }
+
+vector<int> only_evens(const vector<int>& vec) {
+    vector<int> v;
+    for (size_t i = 0; i < vec.size(); ++i) { //Recycling code, if it works it works
+        if (vec[i] % 2 == 0) {
+            v.push_back(vec[i]); //Appends the even values to the vector
+        }
+    }
+    return v;
+}
