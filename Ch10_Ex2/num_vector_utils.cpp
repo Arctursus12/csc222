@@ -36,6 +36,16 @@ vector<int> only_odds(const vector<int>& vec) {
     return v; //This is the exact same code as evens, just using 1 instead of 0 in the if check
 }
 
+vector<int> nums_between(const vector<int>& vec, int low, int high) {
+    vector<int> v; //Failsafe not needed here, as a blank vector is just a blank vector
+    for (size_t i = 0; i < vec.size(); ++i) { //Recycling code, if it works it works part 4
+        if (vec[i] >= low && vec[i] <= high) {
+            v.push_back(vec[i]); //Appends the correct values to the vector
+        }
+    }
+    return v; //Perfect programming tasks – recycling code 50 times in different ways, I love it
+}
+
 int num_vector_sum(const vector<int>& vec) {
     if (vec.empty()) {return 0;} //Should work as a failsafe in case the vector is empty
     int product = 1;

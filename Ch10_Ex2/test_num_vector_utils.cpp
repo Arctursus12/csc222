@@ -39,3 +39,9 @@ TEST_CASE("Testing num_vector_product") {
     vector<int> nums = {2, 3, 7};
     CHECK(42 == num_vector_sum(nums));
 }
+TEST_CASE("Testing nums_between function") {
+    vector<int> nums = {11, 2, 13, 4, 10, 26, 7, 88, 19, 20, 14, 5, 32};
+    vector<int> nums2 = nums_between(nums, 10, 20);
+    string expected = "11 13 10 19 20 14";
+    CHECK(render_num_vector(nums2) == expected);
+}
