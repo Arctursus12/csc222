@@ -1,5 +1,6 @@
 #include <string>
 #include <vector>
+#include <algorithm> //Don't ask, it makes sense later
 using namespace std;
 
 string render_num_vector(const vector<int>& vec) {
@@ -29,7 +30,7 @@ vector<int> only_evens(const vector<int>& vec) {
 vector<int> only_odds(const vector<int>& vec) {
     vector<int> v; //Failsafe not needed here, as a blank vector is just a blank vector
     for (size_t i = 0; i < vec.size(); ++i) { //Recycling code, if it works it works part 3
-        if (vec[i] % 2 == 1) {
+        if (vec[i] % 2 == !0) {
             v.push_back(vec[i]); //Appends the ODD values to the vector
         }
     }
@@ -58,7 +59,7 @@ int num_vector_sum(const vector<int>& vec) {
 }
 
 int nums_mean(const vector<int>& vec) {
-    int mean;
+    int mean = 0;
     if (vec.empty()) {return 0;} //Should work as a failsafe in case the vector is empty
     for (size_t i = 0; i < vec.size(); ++i) { //Recycling code, if it works it works part 5?
         mean += vec[i];
@@ -67,6 +68,11 @@ int nums_mean(const vector<int>& vec) {
     return mean;
 }
 
-int nums_median(const vector<int>& vec) {
-    return 0;
-}
+double nums_median(const vector<int>& vec) {
+    if (vec.empty()) {return 0.0;} //Should work as a failsafe in case the vector is empty
+    vector<int> sortvec(vec.begin(), vec.end());
+    sort(sortvec.begin(), sortvec.end());
+    size_t size = sortvec.size(); //Those three lines took like an hour to research for
+    if (size % 2 == 0) {return(sortvec[size/2]+sortvec[size/2-1])/2.0;} //2 hours here
+    else {return sortvec[size/2];} //I am very slow sometimes, and this was one such time
+} //And the issue wasn't even here!

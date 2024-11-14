@@ -50,7 +50,11 @@ TEST_CASE("Testing nums_mean function") {
     vector<int> numsmean = {1, 2 ,3};
     CHECK(2 == nums_mean(numsmean));
 }
-TEST_CASE("Testing nums_median function") {
-    vector<int> numsmed = {1, 2 ,3};
-    CHECK(2 == nums_median(numsmed));
+TEST_CASE("Testing nums_median function: odd size/unimodal") {
+    vector<int> numsmed1 = {2, 1 ,3};
+    CHECK(2 == nums_median(numsmed1));
+}
+TEST_CASE("Testing nums_median function: even size/multimodal") {
+    vector<int> numsmed2 = {4, 2 ,3, 1};
+    CHECK(2.5 == nums_median(numsmed2));
 }
