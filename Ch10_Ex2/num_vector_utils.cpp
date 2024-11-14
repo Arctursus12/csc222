@@ -26,6 +26,16 @@ vector<int> only_evens(const vector<int>& vec) {
     return v;
 }
 
+vector<int> only_odds(const vector<int>& vec) {
+    vector<int> v; //Failsafe not needed here, as a blank vector is just a blank vector
+    for (size_t i = 0; i < vec.size(); ++i) { //Recycling code, if it works it works part 3
+        if (vec[i] % 2 == 1) {
+            v.push_back(vec[i]); //Appends the ODD values to the vector
+        }
+    }
+    return v; //This is the exact same code as evens, just using 1 instead of 0 in the if check
+}
+
 int num_vector_sum(const vector<int>& vec) {
     if (vec.empty()) {return 0;} //Should work as a failsafe in case the vector is empty
     int product = 1;
@@ -33,6 +43,6 @@ int num_vector_sum(const vector<int>& vec) {
     for (size_t i = 0; i < vec.size(); ++i) { //Recycling code, if it works it works part 2
         product *= vec[i];
     } //Was right in saving this for last - made the most stupid little mistakes in it
-    return product; /*Adding a last commit here just to be confused
+    return product; /*Adding a last commit on this just to be confused
     Why is this function called a sum in the assignment? It yields a product*/
 }
