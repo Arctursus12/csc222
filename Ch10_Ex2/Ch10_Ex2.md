@@ -1,0 +1,1 @@
+Excluded a.out from the repository (and all future ones), as it's redundant to store test logs. Comments are sparse, less so explaining code, and more so my choices in said code, like specific organization of the variables and whatnot.
