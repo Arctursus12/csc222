@@ -1,1 +1,3 @@
 Excluded a.out from the repository (and all future ones), as it's redundant to store test logs. Comments are sparse, less so explaining code, and more so my choices in said code, like specific organization of the variables and whatnot.
+Realized that technically, I was meant to use nums instead of vec in functions – makes no difference in functionality, but is technically the way I was meant to do it.
+That said, I have seldom ever used the "correct" variable names, and using custom ones has always made life easier, so I'm going to stick by it as long as my code still works.
