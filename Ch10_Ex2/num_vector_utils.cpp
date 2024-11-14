@@ -33,5 +33,6 @@ int num_vector_sum(const vector<int>& vec) {
     for (size_t i = 0; i < vec.size(); ++i) { //Recycling code, if it works it works part 2
         product *= vec[i];
     } //Was right in saving this for last - made the most stupid little mistakes in it
-    return product;
+    return product; /*Adding a last commit here just to be confused
+    Why is this function called a sum in the assignment? It yields a product*/
 }
