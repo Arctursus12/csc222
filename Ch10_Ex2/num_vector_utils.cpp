@@ -47,7 +47,7 @@ vector<int> nums_between(const vector<int>& vec, int low, int high) {
     return v; //Perfect programming tasks – recycling code 50 times in different ways, I love it
 }
 
-int num_vector_sum(const vector<int>& vec) {
+int num_vector_product(const vector<int>& vec) {
     if (vec.empty()) {return 0;} //Should work as a failsafe in case the vector is empty
     int product = 1;
     //Can't use a single letter here like for v and s, I'm addicted to using i in loops

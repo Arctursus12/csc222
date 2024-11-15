@@ -38,7 +38,7 @@ TEST_CASE("Testing only_odds") {
 }
 TEST_CASE("Testing num_vector_product") {
     vector<int> numsp = {2, 3, 7};
-    CHECK(42 == num_vector_sum(numsp));
+    CHECK(42 == num_vector_product(numsp));
 }
 TEST_CASE("Testing nums_between function") {
     vector<int> numsb = {11, 2, 13, 4, 10, 26, 7, 88, 19, 20, 14, 5, 32};
@@ -59,8 +59,14 @@ TEST_CASE("Testing nums_median function: even size") {
     CHECK(2.5 == nums_median(numsmed2));
 }
 TEST_CASE("Testing nums_mode function: unimodal") {
-    CHECK(1==1);
+    vector<int> numsmode1 = {1, 2, 3, 3, 3, 2};
+    vector<int> mode1 = only_evens(numsmode1);
+    string expected = "3";
+    CHECK(render_num_vector(mode1) == expected);
 }
 TEST_CASE("Testing nums_mode function: multimodal") {
-    CHECK(1==1);
+    vector<int> numsmode2 = {2, 1, 2, 3, 1, 3, 3, 2};
+    vector<int> mode2 = only_evens(numsmode2);
+    string expected = "2 3";
+    CHECK(render_num_vector(mode2) == expected);
 }

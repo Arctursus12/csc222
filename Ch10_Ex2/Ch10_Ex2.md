@@ -5,3 +5,4 @@ Mass change commit 1 notes:
 - Edited the only_odds function to account for negative values (cuz why not)
 - Implemented nums_median, an absolutely hellish task because I spent almost 3 hours debugging an issue that was in the HEADER THE ENTIRE TIME
 - Initialized mean in nums_mean to 0 for cleanliness and no usage of random values in memory
+Note: Changed num_vector_sum to num_vector_product – may not be what's in the textbook, but it annoyed me too much.\
