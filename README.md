@@ -5,3 +5,6 @@ A copy of the specific doctest version I am/was using is also available within t
 
 ## Week of Tuesday, November 12, 2024
 - [Chapter 10 Exercise Set 2](https://github.com/Arctursus12/csc222/tree/main/Ch10_Ex2)
+
+## Week of Monday, November 18, 2024
+- [Chapter 11 Main](https://github.com/Arctursus12/csc222/tree/main/Ch11)  
