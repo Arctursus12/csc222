@@ -8,3 +8,8 @@ A copy of the specific doctest version I am/was using is also available within t
 
 ## Week of Monday, November 18, 2024
 - [Chapter 11 Main](https://github.com/Arctursus12/csc222/tree/main/Ch11)  
+(Not much there, I was sick)
+
+## Week of Monday, December 2, 2024
+- [Project: Have a Little Class!](https://codeberg.org/Rockwelllucier/csc222)
+- [Main](https://codeberg.org/Rockwelllucier/CSC222/src/branch/main/burger.cpp), [Header](https://codeberg.org/Rockwelllucier/CSC222/src/branch/main/burger.h), [Tests](https://codeberg.org/Rockwelllucier/CSC222/src/branch/main/test_burger.cpp)
