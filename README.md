@@ -12,3 +12,4 @@ A copy of the specific doctest version I am/was using is also available within t
 
 ## Week of Monday, December 2, 2024
 - [Project: Have a Little Class!](https://codeberg.org/Rockwelllucier/csc222) ([Main](https://codeberg.org/Rockwelllucier/CSC222/src/branch/main/burger.cpp), [Header](https://codeberg.org/Rockwelllucier/CSC222/src/branch/main/burger.h), [Tests](https://codeberg.org/Rockwelllucier/CSC222/src/branch/main/test_burger.cpp))
+- [Commit history](https://codeberg.org/Rockwelllucier/CSC222/commits/branch/main) – see December 5th for my contributions.
